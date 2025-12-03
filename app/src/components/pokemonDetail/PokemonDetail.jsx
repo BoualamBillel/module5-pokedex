@@ -4,9 +4,11 @@ import "./PokemonDetail.css"
 
 function PokemonDetail({ pokemon, onPokemonClick }) {
     const [pokemonsEvo, setPokemonsEvo] = useState([]);
+    const [isPokemonHaveAnEvo, setIsPokemonHasAnEvo] = useState(true);
 
     useEffect(() => {
         setPokemonsEvo([]);
+        setIsPokemonHasAnEvo(true)
         if (pokemon?.apiEvolutions && pokemon.apiEvolutions.length > 0) {
             const fetchAllEvolutions = async () => {
                 try {
@@ -23,6 +25,8 @@ function PokemonDetail({ pokemon, onPokemonClick }) {
                 }
             }
             fetchAllEvolutions();
+        } else {
+            setIsPokemonHasAnEvo(false)
         }
     }, [pokemon]);
 
@@ -48,6 +52,7 @@ function PokemonDetail({ pokemon, onPokemonClick }) {
                 {pokemonsEvo.map((evoPokemon) => (
                     <Pokemon key={evoPokemon.id} pokemon={evoPokemon} onPokemonClick={onPokemonClick} />
                 ))}
+                {isPokemonHaveAnEvo === false && <p className="no-evolution-message">Ce pokémon ne dispose d'aucune évolution !</p>}
             </div>
         </div>
     )

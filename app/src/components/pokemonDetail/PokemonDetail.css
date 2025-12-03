@@ -43,3 +43,16 @@
 .evolutions-title {
     padding-left: 1rem;
 }
+
+.no-evolution-message {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    background-color: black;
+    height: 7vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
