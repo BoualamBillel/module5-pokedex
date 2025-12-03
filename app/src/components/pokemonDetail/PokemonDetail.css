@@ -1,0 +1,45 @@
+.pokemon-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.pokemon-detail-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.pokemon-info-image {
+    height: 15em;
+    width: 15em;
+}
+
+.pokemon-detail-types {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+.pokemon-detail-evo {
+    width: 100%;
+}
+
+.pokemon-types-img {
+    display: flex;
+    align-items: center;
+}
+
+.pokemon-title {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.evolutions-title {
+    padding-left: 1rem;
+}

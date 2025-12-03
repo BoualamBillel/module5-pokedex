@@ -1,4 +1,5 @@
 import Pokemon from "../pokemon/Pokemon";
+import "./PokemonList.css";
 
 function PokemonList({ pokemonsArray }) {
     return (

@@ -1,5 +1,6 @@
 import Pokemon from "../pokemon/Pokemon"
 import { useState, useEffect } from "react";
+import "./PokemonDetail.css"
 
 function PokemonDetail({ pokemon }) {
     const [pokemonsEvo, setPokemonsEvo] = useState([]);
@@ -31,10 +32,10 @@ function PokemonDetail({ pokemon }) {
     return (
         <div className="pokemon-detail-container">
             <div className="pokemon-detail-info">
-                <img src={pokemon.image} alt={`${pokemon.name}-image`} />
-                <p>{pokemon.name}</p>
+                <img className="pokemon-info-image" src={pokemon.image} alt={`${pokemon.name}-image`} />
+                <p className="pokemon-title">{pokemon.name}</p>
                 <div className="pokemon-detail-types">
-                    <p>Types</p>
+                    <p className="types-title">Types</p>
                     <div className="pokemon-types-img">
                         {pokemon.apiTypes.map((type) => (
                             <img key={type.name} src={type.image} alt={`type ${type.name}-image`}></img>
@@ -43,7 +44,7 @@ function PokemonDetail({ pokemon }) {
                 </div>
             </div>
             <div className="pokemon-detail-evo">
-                <p>Evolutions</p>
+                <p className="evolutions-title">Evolutions</p>
                 {pokemonsEvo.map((evoPokemon) => (
                     <Pokemon key={evoPokemon.id} pokemon={evoPokemon} />
                 ))}

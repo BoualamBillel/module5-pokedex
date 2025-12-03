@@ -23,9 +23,13 @@ function App() {
 
   return (
     <div className='main-content'>
-      <PokemonList pokemonsArray={pokemons} />
-      <SearchBar onPokemonFound={setSelectedPokemon} />
-      {selectedPokemon && <PokemonDetail pokemon={selectedPokemon} />}
+      <section className='pokemon-list'>
+        <PokemonList pokemonsArray={pokemons} />
+      </section>
+      <section className='pokemon-detail'>
+        <SearchBar onPokemonFound={setSelectedPokemon} />
+        {selectedPokemon && <PokemonDetail pokemon={selectedPokemon} />}
+      </section>
     </div>
   )
 }
