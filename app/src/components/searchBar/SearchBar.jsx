@@ -1,4 +1,6 @@
 import { useState } from "react"
+import iconeRecherche from "../../assets/icone-recherche-pokemon.png"
+import "./SearchBar.css"
 
 function SearchBar({ onPokemonFound }) {
 
@@ -13,8 +15,8 @@ function SearchBar({ onPokemonFound }) {
 
     return (
         <div className="search-bar">
-            <input type="text" value={searchTerm} onChange={(e) => { setSearchTerm(e.target.value) }} />
-            <button onClick={handleClick}>Rechercher</button>
+            <img onClick={handleClick} src={iconeRecherche} alt="" className="search-icon" />
+            <input type="text" value={searchTerm} onChange={(e) => { setSearchTerm(e.target.value) }} placeholder="Rechercher un Pokémon"/>
         </div>
     );
 }

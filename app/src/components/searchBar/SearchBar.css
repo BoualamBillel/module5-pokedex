@@ -1,0 +1,17 @@
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 5rem;
+}
+
+.search-bar input {
+    text-align: center;
+}
+
+.search-icon {
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+}
