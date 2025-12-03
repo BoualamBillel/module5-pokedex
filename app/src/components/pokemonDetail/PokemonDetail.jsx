@@ -2,7 +2,7 @@ import Pokemon from "../pokemon/Pokemon"
 import { useState, useEffect } from "react";
 import "./PokemonDetail.css"
 
-function PokemonDetail({ pokemon }) {
+function PokemonDetail({ pokemon, onPokemonClick }) {
     const [pokemonsEvo, setPokemonsEvo] = useState([]);
 
     useEffect(() => {
@@ -46,7 +46,7 @@ function PokemonDetail({ pokemon }) {
             <div className="pokemon-detail-evo">
                 <p className="evolutions-title">Evolutions</p>
                 {pokemonsEvo.map((evoPokemon) => (
-                    <Pokemon key={evoPokemon.id} pokemon={evoPokemon} />
+                    <Pokemon key={evoPokemon.id} pokemon={evoPokemon} onPokemonClick={onPokemonClick} />
                 ))}
             </div>
         </div>

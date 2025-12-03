@@ -32,7 +32,7 @@ function App() {
       </section>
       <section className='pokemon-detail'>
         <SearchBar onPokemonFound={setSelectedPokemon} />
-        {selectedPokemon && <PokemonDetail pokemon={selectedPokemon} />}
+        {selectedPokemon && <PokemonDetail pokemon={selectedPokemon} onPokemonClick={handlePokemonClick} />}
       </section>
     </div>
   )
