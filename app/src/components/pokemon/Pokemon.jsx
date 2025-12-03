@@ -1,8 +1,8 @@
 import "./Pokemon.css"
-function Pokemon({ pokemon }) {
+function Pokemon({ pokemon, onPokemonClick }) {
 
     return (
-        <div className="pokemon-card">
+        <div className="pokemon-card" onClick={() => onPokemonClick(pokemon)}>
             <div className="pokemon-info">
                 <p>{pokemon.id}</p>
                 <p>{pokemon.name}</p>

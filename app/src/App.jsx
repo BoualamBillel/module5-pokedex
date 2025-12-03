@@ -21,10 +21,14 @@ function App() {
     fetchData();
   }, [])
 
+  const handlePokemonClick = (pokemonFromList) => {
+    setSelectedPokemon(pokemonFromList);
+  };
+
   return (
     <div className='main-content'>
       <section className='pokemon-list'>
-        <PokemonList pokemonsArray={pokemons} />
+        <PokemonList pokemonsArray={pokemons} onPokemonClick={handlePokemonClick} />
       </section>
       <section className='pokemon-detail'>
         <SearchBar onPokemonFound={setSelectedPokemon} />
