@@ -7,7 +7,6 @@
 
     display: flex;
     justify-content: space-between;
-    margin: 1em;
 }
 
 .pokemon-card:hover {
@@ -17,17 +16,20 @@
 
 .pokemon-info {
     display: flex;
-    gap: 1em;
+    gap: 2em;
     justify-content: center;
     align-items: center;
     padding: 1em;
+
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 .pokemon-image {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 3em;
+    padding-right: 2em;
 }
 
 img {

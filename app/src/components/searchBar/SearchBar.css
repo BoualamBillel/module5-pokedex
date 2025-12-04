@@ -20,3 +20,7 @@
     height: 5rem;
     width: 5rem;
 }
+
+.search-form {
+    display: flex;
+}

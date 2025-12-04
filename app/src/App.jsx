@@ -33,6 +33,8 @@ function App() {
       <section className='pokemon-detail'>
         <SearchBar onPokemonFound={setSelectedPokemon} />
         {selectedPokemon && <PokemonDetail pokemon={selectedPokemon} onPokemonClick={handlePokemonClick} />}
+        {selectedPokemon == null && <p className='no-pokemon-selected-message'>Rechercher un Pokémon ou Cliquer dans la liste pour afficher les details du Pokémon</p>}
+
       </section>
     </div>
   )

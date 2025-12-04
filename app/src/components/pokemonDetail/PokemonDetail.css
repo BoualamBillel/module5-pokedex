@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
     font-weight: bold;
     width: 100%;
+    height: 100%;
 }
 
 .pokemon-detail-info {
@@ -15,8 +17,8 @@
 }
 
 .pokemon-info-image {
-    height: 15em;
-    width: 15em;
+    height: 40vh;
+    width: 40vh;
 }
 
 .pokemon-detail-types {
@@ -27,8 +29,11 @@
 }
 
 .pokemon-detail-evo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
-    max-height: 20vh;
+    max-height: 80%;
     overflow-y: scroll;
 }
 
@@ -54,8 +59,9 @@
     margin-top: 1rem;
     text-align: center;
     font-weight: bolder;
-    background-color: black;
-    height: 7vh;
+    background-color: #232323;
+    height: 6em;
+    font-size: 1.1em;
 
     display: flex;
     justify-content: center;
