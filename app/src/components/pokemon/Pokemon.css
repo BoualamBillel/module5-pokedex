@@ -1,6 +1,6 @@
 .pokemon-card {
-    background-color: black;
-    height: 5em;
+    background-color: #232323;
+    height: 6em;
     width: 100%;
     color: white;
     cursor: pointer;
@@ -24,7 +24,10 @@
 }
 
 .pokemon-image {
-    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3em;
 }
 
 img {

@@ -36,6 +36,7 @@ function PokemonDetail({ pokemon, onPokemonClick }) {
     return (
         <div className="pokemon-detail-container">
             <div className="pokemon-detail-info">
+                <p className="pokemon-id">n°{pokemon.id}</p>
                 <img className="pokemon-info-image" src={pokemon.image} alt={`${pokemon.name}-image`} />
                 <p className="pokemon-title">{pokemon.name}</p>
                 <div className="pokemon-detail-types">

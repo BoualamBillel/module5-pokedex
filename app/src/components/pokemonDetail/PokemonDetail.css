@@ -28,6 +28,8 @@
 
 .pokemon-detail-evo {
     width: 100%;
+    max-height: 20vh;
+    overflow-y: scroll;
 }
 
 .pokemon-types-img {
@@ -38,6 +40,10 @@
 .pokemon-title {
     font-size: 3rem;
     font-weight: bolder;
+}
+
+.pokemon-id {
+    font-size: 1.1rem
 }
 
 .evolutions-title {
